@@ -3,5 +3,6 @@ from config.bot import run
 from classes.user import User
 
 api = setup()
-user = User('Madokera', api)
+name = input("Twitter account to track: ")
+user = User(name, api)
 run(user, api)
