@@ -1,5 +1,4 @@
 from classes.user import User
-import tweepy
 
 class Tweet:
   def __init__(self, tweet, user, api):
