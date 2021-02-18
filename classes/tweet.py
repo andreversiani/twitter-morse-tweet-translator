@@ -10,7 +10,7 @@ class Tweet:
 
   def has_media(self): 
     try:
-        self.tweet.entities['urls'][0]['display_url'] 
+        self.tweet.entities['media']
         return True
     except:
         return False
