@@ -1,8 +1,6 @@
-from config.credentials import setup
+from config.setup import setup
 from config.bot import run
-from classes.user import User
+from config.credentials import account_name
 
-api = setup()
-name = input("Twitter account to track: ")
-user = User(name, api)
+api, user = setup(account_name)
 run(user, api)
